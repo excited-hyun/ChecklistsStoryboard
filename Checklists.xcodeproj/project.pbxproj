@@ -13,6 +13,7 @@
 		30DC6635267523E30065DC73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DC6633267523E30065DC73 /* Main.storyboard */; };
 		30DC6637267523E60065DC73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30DC6636267523E60065DC73 /* Assets.xcassets */; };
 		30DC663A267523E60065DC73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DC6638267523E60065DC73 /* LaunchScreen.storyboard */; };
+		30DC664226752B4E0065DC73 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC664126752B4E0065DC73 /* ChecklistItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		30DC6636267523E60065DC73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30DC6639267523E60065DC73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30DC663B267523E60065DC73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30DC664126752B4E0065DC73 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				30DC662D267523E30065DC73 /* AppDelegate.swift */,
 				30DC662F267523E30065DC73 /* SceneDelegate.swift */,
 				30DC6631267523E30065DC73 /* ChecklistViewController.swift */,
+				30DC664126752B4E0065DC73 /* ChecklistItem.swift */,
 				30DC6633267523E30065DC73 /* Main.storyboard */,
 				30DC6636267523E60065DC73 /* Assets.xcassets */,
 				30DC6638267523E60065DC73 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 				30DC6632267523E30065DC73 /* ChecklistViewController.swift in Sources */,
 				30DC662E267523E30065DC73 /* AppDelegate.swift in Sources */,
 				30DC6630267523E30065DC73 /* SceneDelegate.swift in Sources */,
+				30DC664226752B4E0065DC73 /* ChecklistItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
