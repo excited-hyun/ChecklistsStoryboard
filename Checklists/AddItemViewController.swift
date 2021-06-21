@@ -10,6 +10,7 @@ import UIKit
 protocol AddItemViewControllerDelegate: class {
     func addItemViewContorllerDidCancel(_ controller: AddItemViewController)
     func addItemViewController(_ controller: AddItemViewController, didFinishAdding item: ChecklistItem)
+    func addItemViewController(_ controller: AddItemViewController, didFinishEditing item: ChecklistItem)
 }
 
 class AddItemViewController: UITableViewController, UITextFieldDelegate {
@@ -19,15 +20,16 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
     
     weak var delegate: AddItemViewControllerDelegate?
+    var itemToEdit: ChecklistItem?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        if let itemToEdit = itemToEdit {
+            title = "Edit Item"
+            textField.text = itemToEdit.text
+            doneBarButton.isEnabled = true
+        }
     }
     
     /*initial keyboard*/
@@ -42,13 +44,20 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
     }
     
     @IBAction func done() {
-        let item = ChecklistItem()
-        item.text = textField.text!
-        item.checked = false
+        if let itemToEdit = itemToEdit{
+            itemToEdit.text = textField.text!
+            
+            delegate?.addItemViewController(self, didFinishEditing: itemToEdit)
+            
+        } else{
+            let item = ChecklistItem()
+            item.text = textField.text!
+            item.checked = false
+            
+            delegate?.addItemViewController(self, didFinishAdding: item)
+        }
         
-        delegate?.addItemViewController(self, didFinishAdding: item)
-        
-        print("text: \(textField.text)")
+        //print("text: \(textField.text)")
     }
     
     override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
