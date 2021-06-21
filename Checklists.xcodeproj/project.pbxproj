@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30D9F1D32680B2CE00CA1581 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D9F1D22680B2CE00CA1581 /* AddItemViewController.swift */; };
 		30DC662E267523E30065DC73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC662D267523E30065DC73 /* AppDelegate.swift */; };
 		30DC6630267523E30065DC73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC662F267523E30065DC73 /* SceneDelegate.swift */; };
 		30DC6632267523E30065DC73 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DC6631267523E30065DC73 /* ChecklistViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30D9F1D22680B2CE00CA1581 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		30DC662A267523E30065DC73 /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DC662D267523E30065DC73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30DC662F267523E30065DC73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				30DC6631267523E30065DC73 /* ChecklistViewController.swift */,
 				30DC664126752B4E0065DC73 /* ChecklistItem.swift */,
 				30DC6633267523E30065DC73 /* Main.storyboard */,
+				30D9F1D22680B2CE00CA1581 /* AddItemViewController.swift */,
 				30DC6636267523E60065DC73 /* Assets.xcassets */,
 				30DC6638267523E60065DC73 /* LaunchScreen.storyboard */,
 				30DC663B267523E60065DC73 /* Info.plist */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30D9F1D32680B2CE00CA1581 /* AddItemViewController.swift in Sources */,
 				30DC6632267523E30065DC73 /* ChecklistViewController.swift in Sources */,
 				30DC662E267523E30065DC73 /* AppDelegate.swift in Sources */,
 				30DC6630267523E30065DC73 /* SceneDelegate.swift in Sources */,
